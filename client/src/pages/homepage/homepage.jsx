@@ -52,7 +52,6 @@ const dataMonth = [
   { id: "28", day: "28", percent: "10" },
   { id: "29", day: "29", percent: "100" },
   { id: "30", day: "30", percent: "70" },
-  { id: "31", day: "31", percent: "100" },
 ];
 
 function HomePage() {
