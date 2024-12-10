@@ -10,66 +10,27 @@
 }
 
 
-
 .img {
   width: 100%;
   min-width: 100%;
 }
-
-.card{
+.today{
+  box-shadow: 0 4px 14px 0 rgba(64, 123, 255, 0.3);
+  background-color: #ECF2FF;
+  padding: 24px 8px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
-  gap:38px;
-  border-bottom: 1px solid #D7E3FF;
-  /*border-bottom: 1px solid var(--secondary-color-5);*/
 
+  /*background: var(--secondary-color-2);*/
 }
-.left{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap:12px
-}
-
-.rigth{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap:18px;
-
-}
-
-.water{
-    fill: #407BFF;
-}
-.pencil{
-  stroke: #407BFF;
-}
-
-.trash{
-  stroke: #EF5050;
-}
-
-.cardbig{
-  /*background-color: #8baeff;*/
-  max-height: 264px;
-  overflow-y: auto;
-
-}
-.textwater{
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 133%;
-  color:#407BFF
-  /*color: var(--primery-color-blue);*/
-
-}
-
-.texttime{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 200%;
+.title{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color:#2F2F2F;
+  margin-bottom: 16px;
+  width: 100%;
   /*color: var(--primery-color-black);*/
 }
