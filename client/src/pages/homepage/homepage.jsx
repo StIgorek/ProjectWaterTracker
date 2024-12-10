@@ -5,6 +5,7 @@ import WaterListIItemMonth from "../../components/homepage/waterListItemMonth/Wa
 import WaterListMonth from "../../components/homepage/waterListMonth/WaterListMonth.jsx";
 import WaterListToday from "../../components/homepage/waterlisttoday/WaterListToday.jsx";
 import WaterRange from "../../components/homepage/waterrange/WaterRange.jsx";
+import { resizeWindow } from "../../utils/resizeWindow.js";
 import css from "./homepage.module.css";
 
 const dataToday = [
@@ -55,13 +56,24 @@ const dataMonth = [
 ];
 
 function HomePage() {
+  const sizeWindow = resizeWindow();
+  const isMobile = sizeWindow <= 767;
+  const isTablet = sizeWindow > 767 || sizeWindow < 1439;
+  const isDesktop = sizeWindow >= 1440;
+
+  console.log(isMobile, isTablet, isDesktop);
   return (
     <main className={css.homepage}>
       <MyDailyCard />
-      <Butt />
-      <WaterRange />
+      <div className={css.butl}>
+        <Butt />
+      </div>
 
-      <div>Add Water</div>
+      <div className={css.rangeblok}>
+        <WaterRange />
+        <button>Add Water</button>
+      </div>
+
       <div className={css.today}>
         <h2 className={css.title}>Today</h2>
         <WaterListToday>
@@ -82,3 +94,4 @@ function HomePage() {
 }
 
 export default HomePage;
+4;
