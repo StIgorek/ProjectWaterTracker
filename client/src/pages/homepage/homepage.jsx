@@ -1,50 +1,41 @@
-import { useState } from "react";
 import Butt from "../../components/butt.jsx";
+import MyDailyCard from "../../components/mydaylicard/MyDayliCard.jsx";
+import GlassOfWater from "../../components/ui/icons/GlassOfWater.jsx";
+import PencilSquareOutline from "../../components/ui/icons/PencilSquareOutline.jsx";
+import TrashOutline from "../../components/ui/icons/TrashOutline.jsx";
+import WaterRange from "../../components/waterrange/WaterRange.jsx";
 import css from "./homepage.module.css";
 
 function HomePage() {
-  const value = 60;
-
-  const handleChange = () => {};
-
   return (
     <main className={css.homepage}>
-      <div className={css.card}>
-        <p className={css.title}>My daily norma</p>
-        <div className={css.cardfooter}>
-          <p className={css.text}>1.5 L</p>
-          <button className={css.button}>Edit</button>
-        </div>
-      </div>
+      <MyDailyCard />
       <Butt />
-      <div className={css.slidercontainer}>
-        <p className={css.slidertitle}>Today</p>
-        <div className={css.divslider}>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={value}
-            onChange={handleChange}
-            className={css.slider}
-          />
-          <ul className={css.sliderlabels}>
-            <li className={css.sliderlabelleft}>
-              <span className={css.trot}></span>
-              <span className={css.span}>0%</span>
-            </li>
-            <li className={css.sliderlabelcenter}>
-              <span className={css.trot}></span>
-              <span className={css.spancentr}>50%</span>
-            </li>
-            <li className={css.sliderlabelright}>
-              <span className={css.trot}></span>
-              <span className={css.span}>100%</span>
-            </li>
-          </ul>
+      <WaterRange />
+
+      <div>Add Water</div>
+
+      <div className={css.cardbig}>
+        <div className={css.card}>
+          <div className={css.left}>
+            <div className={css.water}>
+              <GlassOfWater size="26" />
+            </div>
+
+            <p className={css.textwater}>200 mL</p>
+            <p className={css.texttime}>14:00 PM</p>
+          </div>
+          <div className={css.rigth}>
+            <div className={css.pencil}>
+              <PencilSquareOutline size="16" />
+            </div>
+            <div className={css.trash}>
+              <TrashOutline size="16" />
+            </div>
+          </div>
         </div>
       </div>
-      <div>Add Water</div>
+
       <div>Today Mounth</div>
     </main>
   );
