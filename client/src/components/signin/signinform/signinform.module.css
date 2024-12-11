@@ -1,0 +1,65 @@
+.container {
+  width: 280px;
+  height: 304px;
+  margin-top: 80px;
+  margin-left: 20px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 280px;
+  height: 168px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.h3 {
+  width: 280px;
+  height: 32px;
+}
+
+.label {
+  width: 280px;
+  height: 76px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.p {
+  width: 280px;
+  height: 24px;
+}
+
+.input {
+  border: 1px solid rgba(215, 227, 255, 1);
+  border-radius: 6px;
+  width: 280px;
+  height: 44px;
+  color: rgba(158, 187, 255, 1);
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: lightblue;
+  width: 280px;
+  height: 36px;
+}
+
+.a {
+  width: 280px;
+  height: 20px;
+}
